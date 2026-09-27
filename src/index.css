@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --navy: #1a1f5e;
+  --navy-dark: #0f1340;
+  --accent-orange: #f97316;
+  --accent-pink: #ec4899;
+  --grad-btn: linear-gradient(135deg, #6c47ff 0%, #f97316 100%);
+  --grad-splash: linear-gradient(160deg, #1a0533 0%, #3b0f6e 40%, #c2410c 100%);
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+  background: #f3f0ff;
+}
+
+.tamil {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+.btn-grad {
+  background: linear-gradient(90deg, #6c47ff 0%, #f97316 100%);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.btn-grad:hover { opacity: 0.9; }
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(80,0,200,0.08);
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, #6c47ff, #f97316);
+  border-radius: 999px;
+}
+
+.bottom-nav {
+  background: #fff;
+  border-top: 1px solid #e8e4f8;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  z-index: 100;
+}
+
+.screen {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 70px;
+  background: #faf9ff;
+}
+
+.splash-screen {
+  background: var(--grad-splash);
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.ring {
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.15);
+  position: absolute;
+}
+
+.donut {
+  border-radius: 50%;
+  background: conic-gradient(#6c47ff 0% 86%, #e8e0ff 86% 100%);
+  position: relative;
+}
+.donut::after {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  background: #fff;
+  border-radius: 50%;
+}
+

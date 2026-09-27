@@ -1,0 +1,10 @@
+{
+  "description": "Provides a stable website platform where content and design remain unchanged, ensuring consistent user experience and reliable information delivery.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
